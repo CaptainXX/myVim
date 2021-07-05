@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =1
+let g:netrw_dirhist_1='/home/bw/.vim/plugged/ale/autoload/ale'
+let g:netrw_dirhist_0='/home/bw/Documents/CODE/graduation_design/tracked_proj/cross_fusion/fusion'
+let g:netrw_dirhist_9='/home/bw/Documents/CODE/graduation_design/tracked_proj/cross_fusion'
+let g:netrw_dirhist_8='/home/bw/Documents/CODE/graduation_design/tracked_proj/cross_fusion/fusion'
+let g:netrw_dirhist_7='/home/bw/Documents/CODE/graduation_design/tracked_proj/cross_fusion'
+let g:netrw_dirhist_6='/home/bw/Documents/CODE/graduation_design/tracked_proj/cross_fusion/imgs'
+let g:netrw_dirhist_5='/home/bw/Documents/CODE/graduation_design/tracked_proj/cross_fusion'
+let g:netrw_dirhist_4='/home/bw/Documents/CODE/graduation_design/tracked_proj/cross_fusion/fusion'
+let g:netrw_dirhist_3='/home/bw/Documents/CODE/graduation_design/tracked_proj/cross_fusion'
+let g:netrw_dirhist_2='/home/bw/Documents/CODE/graduation_design/tracked_proj/cross_fusion/fusion'
