@@ -35,11 +35,25 @@ set gdefault            "substitute all things in a line not the first
 
 
 "Key mapping
-inoremap ' ''<ESC>i
-inoremap " ""<ESC>i
-inoremap ( ()<ESC>i
-inoremap [ []<ESC>i
-inoremap { {<CR>}<ESC>0
+inoremap ' ''<LEFT>
+inoremap " ""<LEFT>
+imap ( ()<LEFT>
+imap [ []<LEFT>
+imap { {}<LEFT>
+imap < <><LEFT>
+imap ` ``<LEFT>
+
+"Key mapping for markdown
+"F1 == generate blog head
+autocmd FileType markdown inoremap <F1> ---<CR>layout: post<CR>title: [TITLE]<CR>date: <c-r>=strftime("%y-%m-%d %H:%M:%S +0800")<CR><CR>categories: [CATEGORY]<CR>---<CR>
+autocmd FileType markdown nnoremap <F2> :!cd /home/bw/Documents/blogs/StarPlatinum-blog.github.io && git add --all && git commit -am "update" && git push<CR>
+
+"Key mapping for cpp
+"F2 == build && run
+"F3 == generate generic head of c++ files
+autocmd FileType cpp inoremap < <
+autocmd FileType cpp nnoremap <buffer> <F2> :!g++ -o test % -std=c++11 -g -Wall && ./test <CR>
+autocmd FileType cpp nnoremap <F3> i#include <iostream> <CR>using namespace std; <CR><CR>int main() { <CR><CR>return 0;<CR>}<CR> <ESC>5Gi<TAB>
 
 "Ctags settings
 map <F5> :!ctags -r --c++ -kinds=+p --fields=+iaS --extra=+q .<CR><CR> :TlistUpdate<CR>
