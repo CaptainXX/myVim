@@ -45,8 +45,8 @@ imap ` ``<LEFT>
 
 "Key mapping for markdown
 "F1 == generate blog head
-autocmd FileType markdown inoremap <F1> ---<CR>layout: post<CR>title: [TITLE]<CR>date: <c-r>=strftime("%y-%m-%d %H:%M:%S +0800")<CR><CR>categories: [CATEGORY]<CR>---<CR>
-autocmd FileType markdown nnoremap <F2> :!cd /home/bw/Documents/blogs/StarPlatinum-blog.github.io && git add --all && git commit -am "update" && git push<CR>
+autocmd FileType markdown inoremap <F3> ---<CR>layout: post<CR>title: [TITLE]<CR>date: <c-r>=strftime("%y-%m-%d %H:%M:%S +0800")<CR><CR>categories: [CATEGORY]<CR>---<CR>
+autocmd FileType markdown nnoremap <F2> :!cd /home/bw/Documents/Blogs/StarPlatinum-blog.github.io && git add --all && git commit -am "update" && git push<CR>
 
 "Key mapping for cpp
 "F2 == build && run
